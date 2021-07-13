@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/msafernaeveris/config-server3.git
+          searchPaths: config-data
+          default-label: main
